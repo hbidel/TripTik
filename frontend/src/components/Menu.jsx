@@ -6,7 +6,7 @@ const Menu = ({ categories, wines }) => {
   const [showWines, setShowWines] = useState(false);
 
   const getCategoryIcon = (index) => {
-    const icons = [Utensils, Utensils, Coffee];
+    const icons = [Utensils, Utensils, Coffee, Utensils];
     const IconComponent = icons[index] || Utensils;
     return <IconComponent className="w-5 h-5" />;
   };
