@@ -17,11 +17,9 @@ const Footer = ({ restaurant }) => {
           {/* Restaurant Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
-              <img 
-                src="/api/placeholder/32/32" 
-                alt="Trip'Tik Logo" 
-                className="h-8 w-8 rounded-full object-contain bg-primary p-1"
-              />
+              <div className="h-8 w-8 rounded-full bg-primary border-2 border-yellow-400 flex items-center justify-center">
+                <span className="text-xs font-bold text-black font-serif">T'T</span>
+              </div>
               <h3 className="text-2xl font-bold font-serif">{restaurant.name}</h3>
             </div>
             <p className="text-gray-300 font-sans leading-relaxed">
