@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, Phone, Mail, Clock, Wine, Heart } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, Wine, Heart, Instagram } from 'lucide-react';
 
 const Footer = ({ restaurant }) => {
   const scrollToSection = (href) => {
