@@ -3,11 +3,12 @@ export const mockData = {
   restaurant: {
     name: "Trip'Tik",
     tagline: "Modern Bistro • Traditional Soul",
-    location: "Reunion Island",
+    location: "Saint-Pierre, Reunion Island",
     description: "A modern and welcoming bistro, blending traditional spirit with contemporary touches. Our cozy and intimate interior, with exposed rubble walls and shelves filled with wine bottles, evokes the soul of Parisian bistros while bringing a touch of modernity.",
-    phone: "+262 262 12 34 56",
+    phone: "0262 59 66 94",
     email: "contact@triptik-reunion.com",
-    address: "123 Rue de la République, Saint-Denis, Reunion Island",
+    address: "7 rue Auguste Babet, 97410 Saint-Pierre, Reunion Island",
+    instagram: "https://www.instagram.com/triptikrestaurant/",
     hours: {
       weekdays: "12:00 - 14:30 • 19:00 - 22:30",
       saturday: "19:00 - 23:00",
