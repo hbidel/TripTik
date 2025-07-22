@@ -35,7 +35,7 @@ const Hero = ({ restaurant }) => {
             <div className="bg-primary-dark/50 backdrop-blur-sm rounded-lg p-6 hover:bg-primary-dark/70 transition-all duration-300 transform hover:-translate-y-1">
               <MapPin className="w-8 h-8 text-black mx-auto mb-4" />
               <h3 className="font-semibold text-black font-serif text-lg mb-2">Localisation</h3>
-              <p className="text-black/70 font-sans">{restaurant.location}</p>
+              <p className="text-black/70 font-sans">Saint-Pierre, Reunion Island</p>
             </div>
             
             <div className="bg-primary-dark/50 backdrop-blur-sm rounded-lg p-6 hover:bg-primary-dark/70 transition-all duration-300 transform hover:-translate-y-1">
