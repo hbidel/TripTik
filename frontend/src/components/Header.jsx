@@ -19,11 +19,9 @@ const Header = ({ navigation }) => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <div className="flex items-center space-x-3">
-              <img 
-                src="/api/placeholder/40/40" 
-                alt="Trip'Tik Logo" 
-                className="h-10 w-10 rounded-full object-contain bg-white p-1"
-              />
+              <div className="h-10 w-10 rounded-full bg-white border-2 border-yellow-400 flex items-center justify-center shadow-md">
+                <span className="text-xs font-bold text-black font-serif">T'T</span>
+              </div>
               <h1 className="text-2xl font-bold text-black font-serif">Trip'Tik</h1>
             </div>
           </div>
