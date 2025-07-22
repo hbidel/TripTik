@@ -44,6 +44,17 @@ const Footer = ({ restaurant }) => {
                 <Mail className="w-4 h-4 text-primary flex-shrink-0" />
                 <span className="text-gray-300 font-sans">{restaurant.email}</span>
               </div>
+              <div className="flex items-center space-x-3">
+                <Instagram className="w-4 h-4 text-primary flex-shrink-0" />
+                <a 
+                  href={restaurant.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-300 font-sans hover:text-primary transition-colors duration-200"
+                >
+                  @triptikrestaurant
+                </a>
+              </div>
             </div>
           </div>
 
