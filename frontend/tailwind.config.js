@@ -24,7 +24,8 @@ module.exports = {
   				foreground: 'hsl(var(--popover-foreground))'
   			},
   			primary: {
-  				DEFAULT: 'hsl(var(--primary))',
+  				DEFAULT: '#ECEC75', // Bright lime-yellow
+  				dark: '#e6e67c', // Darker tint for cards
   				foreground: 'hsl(var(--primary-foreground))'
   			},
   			secondary: {
@@ -54,6 +55,10 @@ module.exports = {
   				'5': 'hsl(var(--chart-5))'
   			}
   		},
+  		fontFamily: {
+  			serif: ['Crimson Text', 'Times New Roman', 'serif'],
+  			sans: ['-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif']
+  		},
   		keyframes: {
   			'accordion-down': {
   				from: {
@@ -70,11 +75,33 @@ module.exports = {
   				to: {
   					height: '0'
   				}
+  			},
+  			'fade-in': {
+  				'0%': {
+  					opacity: '0',
+  					transform: 'translateY(20px)'
+  				},
+  				'100%': {
+  					opacity: '1',
+  					transform: 'translateY(0)'
+  				}
+  			},
+  			'slide-up': {
+  				'0%': {
+  					opacity: '0',
+  					transform: 'translateY(30px)'
+  				},
+  				'100%': {
+  					opacity: '1',
+  					transform: 'translateY(0)'
+  				}
   			}
   		},
   		animation: {
   			'accordion-down': 'accordion-down 0.2s ease-out',
-  			'accordion-up': 'accordion-up 0.2s ease-out'
+  			'accordion-up': 'accordion-up 0.2s ease-out',
+  			'fade-in': 'fade-in 0.6s ease-in-out',
+  			'slide-up': 'slide-up 0.5s ease-out'
   		}
   	}
   },
