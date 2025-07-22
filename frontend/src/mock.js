@@ -109,22 +109,52 @@ export const mockData = {
       name: "Desserts",
       items: [
         {
-          id: 8,
-          name: "Tarte Tatin",
-          description: "Upside-down apple tart with vanilla ice cream",
-          price: "€8"
+          id: 12,
+          name: "Ananas Rôti",
+          description: "Ananas rôti au beurre salé, ganache onctueuse au chocolat blanc et brunoise d'ananas frais. Fraîcheur, douceur, et une pointe d'exotisme.",
+          price: "11,00 €"
         },
         {
-          id: 9,
-          name: "Mousse au Chocolat",
-          description: "Dark chocolate mousse with raspberry coulis",
-          price: "€7"
+          id: 13,
+          name: "Brownie Chocolat",
+          description: "Brownie fondant, noix de macadamia croquantes, ganache aux chocolats blanc et noir. Pour les amoureux du chocolat.",
+          price: "11,00 €"
         },
         {
-          id: 10,
-          name: "Crème Brûlée Vanille",
-          description: "Classic vanilla crème brûlée with caramelized sugar",
-          price: "€8"
+          id: 14,
+          name: "Crème Brulée Du Moment",
+          description: "L'inspiration sucrée du chef selon la saison…laissez-vous surprendre !",
+          price: "8,00 €"
+        },
+        {
+          id: 15,
+          name: "Moelleux Chocolat",
+          description: "Meringue craquante, confiture de patate douce à la vanille, segments d'orange et sorbet de tangor. Un dessert aérien, fruité et étonnant.",
+          price: "11,00 €"
+        },
+        {
+          id: 16,
+          name: "Café Ou Thé Gourmand",
+          description: "Un assortiment de mini douceurs maison pour finir en beauté sans devoir choisir.",
+          price: "10,00 €"
+        },
+        {
+          id: 17,
+          name: "Dégustation De Fromage",
+          description: "Sélection de fromages du moment x3, (±100g)",
+          price: "12,00 €"
+        }
+      ]
+    },
+    {
+      id: 4,
+      name: "Menu Enfant",
+      items: [
+        {
+          id: 18,
+          name: "Menu Enfant",
+          description: "Demi portion de la Pièce Du Boucher OU du Poisson Du Jour + Garniture au choix + Sirop + Boule de glace ou migniardises",
+          price: "14,00 €"
         }
       ]
     }
