@@ -55,7 +55,7 @@ const Footer = ({ restaurant }) => {
                 <Clock className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
                 <div>
                   <p>Mar - Ven: {restaurant.hours.weekdays}</p>
-                  <p>Sam - Dim: {restaurant.hours.weekend}</p>
+                  <p>Sam: {restaurant.hours.saturday}</p>
                   <p className="text-red-400">Fermé le {restaurant.hours.closed}</p>
                 </div>
               </div>
