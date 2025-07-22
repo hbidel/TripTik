@@ -94,7 +94,7 @@ const Contact = ({ restaurant, onReservation }) => {
                     <h4 className="font-semibold text-black font-serif">Horaires d'ouverture</h4>
                     <p className="text-gray-700 font-sans">
                       Mar - Ven: {restaurant.hours.weekdays}<br />
-                      Sam - Dim: {restaurant.hours.weekend}<br />
+                      Sam: {restaurant.hours.saturday}<br />
                       <span className="text-red-600">Fermé le {restaurant.hours.closed}</span>
                     </p>
                   </div>
