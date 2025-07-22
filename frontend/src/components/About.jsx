@@ -86,7 +86,7 @@ const About = ({ restaurant, features, testimonials }) => {
           <h3 className="text-3xl font-bold text-black font-serif text-center mb-12">
             Ce que disent nos clients
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {testimonials.map((testimonial) => (
               <div
                 key={testimonial.id}
