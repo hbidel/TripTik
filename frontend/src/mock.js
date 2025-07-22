@@ -187,20 +187,26 @@ export const mockData = {
   testimonials: [
     {
       id: 1,
-      name: "Marie Dubois",
-      text: "Une ambiance exceptionnelle qui nous transporte directement dans un bistro parisien. La cuisine est remarquable !",
+      name: "Helene Baron Hoarau",
+      text: "Très bon moment au Trip Tik. Accueil et service très agréable, chaleureux. Cuisine de qualité et si généreuse. Une petite carte mais parfaitement maîtrisée avec des produits frais et simples mais parfaitement exécutés avec du goût. Le café gourmand est excellent avec une pâte artisanale de très bonne qualité.",
       rating: 5
     },
     {
       id: 2,
-      name: "Jean-Pierre Martin",
-      text: "Le cadre intimiste et la qualité des plats font du Trip'Tik une adresse incontournable à la Réunion.",
+      name: "E.M.",
+      text: "Une adresse qu'il ne faut pas manquer ! Un endroit atypique où l'art se mélange avec un petit fond musical appréciable. Côté bar et cuisine, un joli menu dans une carte limitée mais de qualité, une cuisine inventive et savoureuse... À découvrir !",
       rating: 5
     },
     {
       id: 3,
-      name: "Sophie Legrand",
-      text: "Service impeccable, décor chaleureux. Un vrai coup de cœur pour ce restaurant unique !",
+      name: "Val Val",
+      text: "Une carte qui sait s'adapter à différents goûts gourmets avec des produits frais délicatement cuisinés. J'ai emmené ma maman de 96 ans qui s'est régalée ! Longue vie au Trip'Tik.",
+      rating: 5
+    },
+    {
+      id: 4,
+      name: "Thousand Roses",
+      text: "Très bon restaurant, situé en centre ville de St Pierre, dans une ambiance bistrot parisien authentique, et une carte qui change régulièrement. Cuisine inventive et savoureuse, service de qualité qui se traduit en choix vigoureux à la carte.",
       rating: 5
     }
   ],
