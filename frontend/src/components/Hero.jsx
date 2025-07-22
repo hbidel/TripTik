@@ -13,6 +13,15 @@ const Hero = ({ restaurant }) => {
     <section id="home" className="bg-primary min-h-screen flex items-center pt-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
+          {/* Logo Hero */}
+          <div className="flex justify-center mb-8">
+            <img 
+              src="/api/placeholder/120/120" 
+              alt="Trip'Tik Logo" 
+              className="h-32 w-32 rounded-full object-contain bg-white/90 p-4 shadow-lg hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+          
           {/* Main Heading */}
           <h1 className="text-6xl md:text-7xl font-bold text-black font-serif mb-6 leading-tight">
             {restaurant.name}
