@@ -67,28 +67,40 @@ export const mockData = {
       name: "Plats Principaux",
       items: [
         {
-          id: 4,
-          name: "Coq au Vin",
-          description: "Chicken braised in red wine with pearl onions and mushrooms",
-          price: "€22"
-        },
-        {
-          id: 5,
-          name: "Bouillabaisse Créole",
-          description: "Local fish stew with Reunion spices and rouille",
-          price: "€28"
-        },
-        {
           id: 6,
-          name: "Entrecôte aux Échalotes",
-          description: "Ribeye steak with shallot confit and herb butter",
-          price: "€26"
+          name: "Magret De Canard",
+          description: "Magret tendre cuisson basse température, confit d'oignons en sauce meurette, mille-feuille de pommes de terre crousti-fondantes et carottes rôties. Une vraie gourmandise pour les amateurs de finesse.",
+          price: "25,00 €"
         },
         {
           id: 7,
-          name: "Risotto aux Fruits de Mer",
-          description: "Creamy seafood risotto with local prawns and scallops",
-          price: "€24"
+          name: "Cordon Bleu",
+          description: "Cordon bleu de veau généreux et fait maison, nappé d'une sauce crème aux champignons, accompagné de spaetzle moelleux et de courgettes grillées. Une assiette réconfortante et pleine de caractère.",
+          price: "24,00 €"
+        },
+        {
+          id: 8,
+          name: "Pièce Du Boucher",
+          description: "Une viande juteuse cuite à la perfection, sublimée par un beurre maître d'hôtel fondant et des potatoes maisons croustillantes à souhait.",
+          price: "20,00 €"
+        },
+        {
+          id: 9,
+          name: "Poulpe Grillé",
+          description: "Poulpe tendre saisi au gril, écrasé de pomme de terre à l'olive, chimichurri maison et poivrons confits. Voyage garanti entre terre et mer.",
+          price: "23,00 €"
+        },
+        {
+          id: 10,
+          name: "Pavé De Daurade",
+          description: "Dorade meunière, peau croustillante et chair délicate, servie avec des légumes glacés et un riz pilaf parfumé. Une assiette marine tout en élégance.",
+          price: "23,00 €"
+        },
+        {
+          id: 11,
+          name: "Risotto Pesto",
+          description: "Risotto crémeux au pesto maison, burrata coulante, tomates confites, caviar d'aubergine et amandes effilées. Une balade méditerranéenne végétarienne pleine de soleil.",
+          price: "22,00 €"
         }
       ]
     },
