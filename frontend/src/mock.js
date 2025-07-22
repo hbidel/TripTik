@@ -10,8 +10,9 @@ export const mockData = {
     address: "123 Rue de la République, Saint-Denis, Reunion Island",
     hours: {
       weekdays: "12:00 - 14:30 • 19:00 - 22:30",
-      weekend: "12:00 - 15:00 • 19:00 - 23:00",
-      closed: "Monday"
+      saturday: "19:00 - 23:00",
+      weekend: "Fermé",
+      closed: "Dimanche et Lundi"
     }
   },
   
