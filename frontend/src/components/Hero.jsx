@@ -15,11 +15,11 @@ const Hero = ({ restaurant }) => {
         <div className="text-center">
           {/* Logo Hero */}
           <div className="flex justify-center mb-8">
-            <img 
-              src="/api/placeholder/120/120" 
-              alt="Trip'Tik Logo" 
-              className="h-32 w-32 rounded-full object-contain bg-white/90 p-4 shadow-lg hover:scale-105 transition-transform duration-300"
-            />
+            <div className="h-32 w-32 rounded-full bg-white border-4 border-yellow-400 flex flex-col items-center justify-center shadow-xl hover:scale-105 transition-transform duration-300">
+              <span className="text-2xl font-bold text-black font-serif">Trip'</span>
+              <span className="text-2xl font-bold text-black font-serif">Tik</span>
+              <span className="text-xs text-gray-600 font-sans mt-1">RESTAURANT</span>
+            </div>
           </div>
           
           {/* Main Heading */}
