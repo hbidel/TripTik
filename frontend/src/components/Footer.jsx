@@ -16,8 +16,12 @@ const Footer = ({ restaurant }) => {
         <div className="py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Restaurant Info */}
           <div className="space-y-4">
-            <div className="flex items-center space-x-2">
-              <Wine className="w-8 h-8 text-primary" />
+            <div className="flex items-center space-x-3">
+              <img 
+                src="/api/placeholder/32/32" 
+                alt="Trip'Tik Logo" 
+                className="h-8 w-8 rounded-full object-contain bg-primary p-1"
+              />
               <h3 className="text-2xl font-bold font-serif">{restaurant.name}</h3>
             </div>
             <p className="text-gray-300 font-sans leading-relaxed">
