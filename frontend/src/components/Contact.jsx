@@ -89,6 +89,21 @@ const Contact = ({ restaurant, onReservation }) => {
                 </div>
                 
                 <div className="flex items-start space-x-4">
+                  <Instagram className="w-6 h-6 text-black mt-1 flex-shrink-0" />
+                  <div>
+                    <h4 className="font-semibold text-black font-serif">Instagram</h4>
+                    <a 
+                      href={restaurant.instagram}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-700 font-sans hover:text-black transition-colors duration-200"
+                    >
+                      @triptikrestaurant
+                    </a>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-4">
                   <Clock className="w-6 h-6 text-black mt-1 flex-shrink-0" />
                   <div>
                     <h4 className="font-semibold text-black font-serif">Horaires d'ouverture</h4>
