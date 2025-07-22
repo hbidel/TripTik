@@ -32,21 +32,33 @@ export const mockData = {
       items: [
         {
           id: 1,
-          name: "Terrine de Canard aux Pistaches",
-          description: "Duck terrine with pistachios, served with toasted brioche",
-          price: "€14"
+          name: "Tataki De Thon",
+          description: "Thon snacké juste saisi, julienne de navet et papaye, mayonnaise au wasabi, gingembre confit et wakamé. Fraîcheur iodée et peps exotique au rendez-vous.",
+          price: "12,00 €"
         },
         {
           id: 2,
-          name: "Salade de Chèvre Chaud",
-          description: "Warm goat cheese salad with honey and walnuts",
-          price: "€12"
+          name: "Quiche Lorraine Déstructurée",
+          description: "Pâte brisée croustillante, lard grillé, flan onctueux au syphon et tuile d'emmental. Toute la gourmandise de la Lorraine en version contemporaine.",
+          price: "10,00 €"
         },
         {
           id: 3,
-          name: "Soupe à l'Oignon Gratinée",
-          description: "Traditional French onion soup with gruyère cheese",
-          price: "€10"
+          name: "Patate Douce Façon Gemüse",
+          description: "Patate douce rôtie, feta, courgette snackée, éclats de grenade, menthe parfumée et noisettes torréfiées. Une explosion végétale en bouche.",
+          price: "10,00 €"
+        },
+        {
+          id: 4,
+          name: "Poireaux Vinaigrette",
+          description: "Poireaux braisés fondants, œuf poché, espuma aérien, pickles croquants de poireau et gressin maison. Un jeu de textures et de saveurs en toute légèreté.",
+          price: "10,00 €"
+        },
+        {
+          id: 5,
+          name: "Z'escargots Du Tampon",
+          description: "Nappés d'une persillade créole relevée à l'ail et aux fines herbes. Une invitation au terroir réunionnais.",
+          price: "x6: 12,00 € / x12: 20,00 €"
         }
       ]
     },
