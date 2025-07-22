@@ -42,7 +42,8 @@ const Hero = ({ restaurant }) => {
               <Clock className="w-8 h-8 text-black mx-auto mb-4" />
               <h3 className="font-semibold text-black font-serif text-lg mb-2">Horaires</h3>
               <p className="text-black/70 font-sans text-sm">
-                {restaurant.hours.weekdays}<br />
+                Mar - Ven: {restaurant.hours.weekdays}<br />
+                Sam: {restaurant.hours.saturday}<br />
                 <span className="text-xs">Fermé le {restaurant.hours.closed}</span>
               </p>
             </div>
