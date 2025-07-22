@@ -18,7 +18,14 @@ const Header = ({ navigation }) => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <h1 className="text-2xl font-bold text-black font-serif">Trip'Tik</h1>
+            <div className="flex items-center space-x-3">
+              <img 
+                src="/api/placeholder/40/40" 
+                alt="Trip'Tik Logo" 
+                className="h-10 w-10 rounded-full object-contain bg-white p-1"
+              />
+              <h1 className="text-2xl font-bold text-black font-serif">Trip'Tik</h1>
+            </div>
           </div>
 
           {/* Desktop Navigation */}
