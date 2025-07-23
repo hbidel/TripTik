@@ -27,6 +27,84 @@ api_router = APIRouter(prefix="/api")
 
 
 # Define Models
+
+# Restaurant Information Models
+class RestaurantHours(BaseModel):
+    weekdays: str
+    saturday: str
+    weekend: str
+    closed: str
+
+class RestaurantInfo(BaseModel):
+    id: str = Field(default_factory=lambda: str(uuid.uuid4()))
+    name: str
+    tagline: str
+    location: str
+    description: str
+    phone: str
+    email: str
+    address: str
+    instagram: str
+    hours: RestaurantHours
+    updated_at: datetime = Field(default_factory=datetime.utcnow)
+
+# Menu Models
+class MenuCategory(BaseModel):
+    id: str = Field(default_factory=lambda: str(uuid.uuid4()))
+    name: str
+    order: int
+    active: bool = True
+
+class MenuItem(BaseModel):
+    id: str = Field(default_factory=lambda: str(uuid.uuid4()))
+    name: str
+    description: str
+    price: str
+    category_id: str
+    available: bool = True
+    created_at: datetime = Field(default_factory=datetime.utcnow)
+
+class Wine(BaseModel):
+    id: str = Field(default_factory=lambda: str(uuid.uuid4()))
+    name: str
+    type: str
+    description: str
+    price: str
+    available: bool = True
+
+# Reservation Models
+class ReservationCreate(BaseModel):
+    name: str
+    email: EmailStr
+    phone: str
+    date: str
+    time: str
+    guests: int
+    message: str = ""
+
+class Reservation(BaseModel):
+    id: str = Field(default_factory=lambda: str(uuid.uuid4()))
+    name: str
+    email: str
+    phone: str
+    date: str
+    time: str
+    guests: int
+    message: str = ""
+    status: str = "pending"  # pending, confirmed, cancelled
+    created_at: datetime = Field(default_factory=datetime.utcnow)
+    updated_at: datetime = Field(default_factory=datetime.utcnow)
+
+# Testimonial Models
+class Testimonial(BaseModel):
+    id: str = Field(default_factory=lambda: str(uuid.uuid4()))
+    name: str
+    text: str
+    rating: int
+    active: bool = True
+    created_at: datetime = Field(default_factory=datetime.utcnow)
+
+# Legacy Models (keeping for compatibility)
 class StatusCheck(BaseModel):
     id: str = Field(default_factory=lambda: str(uuid.uuid4()))
     client_name: str
