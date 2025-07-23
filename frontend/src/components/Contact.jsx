@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { MapPin, Phone, Mail, Clock, Calendar, Users, Instagram } from 'lucide-react';
 
-const Contact = ({ restaurant, onReservation }) => {
+const Contact = ({ restaurant, onReservation, loading = false }) => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
