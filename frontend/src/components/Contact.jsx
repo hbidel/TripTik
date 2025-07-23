@@ -263,14 +263,14 @@ const Contact = ({ restaurant, onReservation, loading = false }) => {
               
               <button
                 type="submit"
-                disabled={isSubmitting}
+                disabled={isSubmitting || loading}
                 className={`w-full py-3 px-6 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg ${
-                  isSubmitting
+                  isSubmitting || loading
                     ? 'bg-gray-400 text-white cursor-not-allowed'
                     : 'bg-black text-white hover:bg-gray-900'
                 }`}
               >
-                {isSubmitting ? 'Envoi en cours...' : 'Confirmer la Réservation'}
+                {isSubmitting || loading ? 'Envoi en cours...' : 'Confirmer la Réservation'}
               </button>
             </form>
           </div>
