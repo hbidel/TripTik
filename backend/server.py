@@ -206,14 +206,28 @@ async def get_wines():
 # Reservation Endpoints
 @api_router.post("/reservations", response_model=Reservation)
 async def create_reservation(reservation_data: ReservationCreate):
-    """Create a new reservation"""
+    """Create a new reservation and send email notification"""
     try:
         reservation = Reservation(**reservation_data.dict())
+        
+        # Save reservation to database
         result = await db.reservations.insert_one(reservation.dict())
-        if result.inserted_id:
-            return reservation
-        else:
+        if not result.inserted_id:
             raise HTTPException(status_code=500, detail="Failed to create reservation")
+        
+        # Send email notification to restaurant
+        try:
+            email_sent = email_service.send_reservation_notification(reservation.dict())
+            if email_sent:
+                logger.info(f"Email notification sent for reservation {reservation.id}")
+            else:
+                logger.warning(f"Failed to send email notification for reservation {reservation.id}")
+        except Exception as e:
+            logger.error(f"Error sending email notification: {str(e)}")
+            # Don't fail the reservation creation if email fails
+        
+        return reservation
+        
     except Exception as e:
         logger.error(f"Error creating reservation: {str(e)}")
         raise HTTPException(status_code=500, detail="Failed to create reservation")
