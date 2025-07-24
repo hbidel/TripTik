@@ -21,8 +21,12 @@ class EmailService:
         self.email_password = os.environ.get('EMAIL_PASSWORD')
         self.restaurant_email = os.environ.get('RESTAURANT_EMAIL')
         
+        logger.info(f"Email service initialized with server: {self.smtp_server}, address: {self.email_address}")
+        
         if not all([self.email_address, self.email_password, self.restaurant_email]):
-            logger.error("Email configuration missing. Please check environment variables.")
+            logger.error(f"Email configuration missing. Address: {self.email_address}, Password: {'*' * len(self.email_password) if self.email_password else 'None'}, Restaurant: {self.restaurant_email}")
+        else:
+            logger.info("Email service configured successfully")
     
     def send_reservation_notification(self, reservation_data: Dict[str, Any]) -> bool:
         """
