@@ -46,10 +46,10 @@ const Contact = ({ restaurant, onReservation, loading = false }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-black font-serif mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-white font-serif mb-6">
             Réservez Votre Table
           </h2>
-          <p className="text-xl text-black/70 max-w-3xl mx-auto leading-relaxed font-sans">
+          <p className="text-xl text-cream max-w-3xl mx-auto leading-relaxed font-sans">
             Contactez-nous pour réserver votre table ou pour toute information. 
             Nous serons ravis de vous accueillir dans notre bistro.
           </p>
@@ -58,45 +58,45 @@ const Contact = ({ restaurant, onReservation, loading = false }) => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Information */}
           <div className="space-y-8">
-            <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-8 shadow-lg">
-              <h3 className="text-2xl font-bold text-black font-serif mb-6">
+            <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-8 shadow-lg">
+              <h3 className="text-2xl font-bold text-primary font-serif mb-6">
                 Informations de Contact
               </h3>
               
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
-                  <MapPin className="w-6 h-6 text-black mt-1 flex-shrink-0" />
+                  <MapPin className="w-6 h-6 text-gold mt-1 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold text-black font-serif">Adresse</h4>
+                    <h4 className="font-semibold text-primary font-serif">Adresse</h4>
                     <p className="text-gray-700 font-sans">{restaurant.address}</p>
                   </div>
                 </div>
                 
                 <div className="flex items-start space-x-4">
-                  <Phone className="w-6 h-6 text-black mt-1 flex-shrink-0" />
+                  <Phone className="w-6 h-6 text-gold mt-1 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold text-black font-serif">Téléphone</h4>
+                    <h4 className="font-semibold text-primary font-serif">Téléphone</h4>
                     <p className="text-gray-700 font-sans">{restaurant.phone}</p>
                   </div>
                 </div>
                 
                 <div className="flex items-start space-x-4">
-                  <Mail className="w-6 h-6 text-black mt-1 flex-shrink-0" />
+                  <Mail className="w-6 h-6 text-gold mt-1 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold text-black font-serif">Email</h4>
+                    <h4 className="font-semibold text-primary font-serif">Email</h4>
                     <p className="text-gray-700 font-sans">{restaurant.email}</p>
                   </div>
                 </div>
                 
                 <div className="flex items-start space-x-4">
-                  <Instagram className="w-6 h-6 text-black mt-1 flex-shrink-0" />
+                  <Instagram className="w-6 h-6 text-gold mt-1 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold text-black font-serif">Instagram</h4>
+                    <h4 className="font-semibold text-primary font-serif">Instagram</h4>
                     <a 
                       href={restaurant.instagram}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-gray-700 font-sans hover:text-black transition-colors duration-200"
+                      className="text-gray-700 font-sans hover:text-primary transition-colors duration-200"
                     >
                       @triptikrestaurant
                     </a>
@@ -104,9 +104,9 @@ const Contact = ({ restaurant, onReservation, loading = false }) => {
                 </div>
                 
                 <div className="flex items-start space-x-4">
-                  <Clock className="w-6 h-6 text-black mt-1 flex-shrink-0" />
+                  <Clock className="w-6 h-6 text-gold mt-1 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold text-black font-serif">Horaires d'ouverture</h4>
+                    <h4 className="font-semibold text-primary font-serif">Horaires d'ouverture</h4>
                     <p className="text-gray-700 font-sans">
                       Mar - Ven: {restaurant.hours.weekdays}<br />
                       Sam: {restaurant.hours.saturday}<br />
@@ -118,11 +118,11 @@ const Contact = ({ restaurant, onReservation, loading = false }) => {
             </div>
 
             {/* Quick Info */}
-            <div className="bg-primary-dark/30 rounded-lg p-6">
-              <h4 className="text-xl font-bold text-black font-serif mb-4">
+            <div className="bg-primary-light/30 rounded-lg p-6 backdrop-blur-sm border border-gold/20">
+              <h4 className="text-xl font-bold text-white font-serif mb-4">
                 Bon à Savoir
               </h4>
-              <ul className="space-y-2 text-black/80 font-sans">
+              <ul className="space-y-2 text-cream font-sans">
                 <li>• Réservation recommandée</li>
                 <li>• Groupes de plus de 8 personnes sur demande</li>
                 <li>• Terrasse disponible selon météo</li>
@@ -133,15 +133,15 @@ const Contact = ({ restaurant, onReservation, loading = false }) => {
           </div>
 
           {/* Reservation Form */}
-          <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-8 shadow-lg">
-            <h3 className="text-2xl font-bold text-black font-serif mb-6">
+          <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-8 shadow-lg">
+            <h3 className="text-2xl font-bold text-primary font-serif mb-6">
               Formulaire de Réservation
             </h3>
             
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label className="block text-sm font-semibold text-black font-serif mb-2">
+                  <label className="block text-sm font-semibold text-primary font-serif mb-2">
                     Nom complet *
                   </label>
                   <input
@@ -150,13 +150,13 @@ const Contact = ({ restaurant, onReservation, loading = false }) => {
                     required
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-black transition-all duration-200 font-sans"
+                    className="w-full px-4 py-3 border border-primary/20 rounded-lg focus:ring-2 focus:ring-gold focus:border-gold transition-all duration-200 font-sans"
                     placeholder="Votre nom"
                   />
                 </div>
                 
                 <div>
-                  <label className="block text-sm font-semibold text-black font-serif mb-2">
+                  <label className="block text-sm font-semibold text-primary font-serif mb-2">
                     Email *
                   </label>
                   <input
@@ -165,7 +165,7 @@ const Contact = ({ restaurant, onReservation, loading = false }) => {
                     required
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-black transition-all duration-200 font-sans"
+                    className="w-full px-4 py-3 border border-primary/20 rounded-lg focus:ring-2 focus:ring-gold focus:border-gold transition-all duration-200 font-sans"
                     placeholder="votre@email.com"
                   />
                 </div>
@@ -173,7 +173,7 @@ const Contact = ({ restaurant, onReservation, loading = false }) => {
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label className="block text-sm font-semibold text-black font-serif mb-2">
+                  <label className="block text-sm font-semibold text-primary font-serif mb-2">
                     Téléphone
                   </label>
                   <input
@@ -181,13 +181,13 @@ const Contact = ({ restaurant, onReservation, loading = false }) => {
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-black transition-all duration-200 font-sans"
+                    className="w-full px-4 py-3 border border-primary/20 rounded-lg focus:ring-2 focus:ring-gold focus:border-gold transition-all duration-200 font-sans"
                     placeholder="+262 123 456 789"
                   />
                 </div>
                 
                 <div>
-                  <label className="block text-sm font-semibold text-black font-serif mb-2">
+                  <label className="block text-sm font-semibold text-primary font-serif mb-2">
                     Nombre de convives *
                   </label>
                   <select
@@ -195,7 +195,7 @@ const Contact = ({ restaurant, onReservation, loading = false }) => {
                     required
                     value={formData.guests}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-black transition-all duration-200 font-sans"
+                    className="w-full px-4 py-3 border border-primary/20 rounded-lg focus:ring-2 focus:ring-gold focus:border-gold transition-all duration-200 font-sans"
                   >
                     {[1,2,3,4,5,6,7,8,9,10].map(num => (
                       <option key={num} value={num}>{num} personne{num > 1 ? 's' : ''}</option>
@@ -206,7 +206,7 @@ const Contact = ({ restaurant, onReservation, loading = false }) => {
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label className="block text-sm font-semibold text-black font-serif mb-2">
+                  <label className="block text-sm font-semibold text-primary font-serif mb-2">
                     Date souhaitée *
                   </label>
                   <input
@@ -216,12 +216,12 @@ const Contact = ({ restaurant, onReservation, loading = false }) => {
                     value={formData.date}
                     onChange={handleChange}
                     min={new Date().toISOString().split('T')[0]}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-black transition-all duration-200 font-sans"
+                    className="w-full px-4 py-3 border border-primary/20 rounded-lg focus:ring-2 focus:ring-gold focus:border-gold transition-all duration-200 font-sans"
                   />
                 </div>
                 
                 <div>
-                  <label className="block text-sm font-semibold text-black font-serif mb-2">
+                  <label className="block text-sm font-semibold text-primary font-serif mb-2">
                     Heure souhaitée *
                   </label>
                   <select
@@ -229,7 +229,7 @@ const Contact = ({ restaurant, onReservation, loading = false }) => {
                     required
                     value={formData.time}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-black transition-all duration-200 font-sans"
+                    className="w-full px-4 py-3 border border-primary/20 rounded-lg focus:ring-2 focus:ring-gold focus:border-gold transition-all duration-200 font-sans"
                   >
                     <option value="">Choisir l'heure</option>
                     <option value="12:00">12:00</option>
@@ -248,7 +248,7 @@ const Contact = ({ restaurant, onReservation, loading = false }) => {
               </div>
               
               <div>
-                <label className="block text-sm font-semibold text-black font-serif mb-2">
+                <label className="block text-sm font-semibold text-primary font-serif mb-2">
                   Message (optionnel)
                 </label>
                 <textarea
@@ -256,7 +256,7 @@ const Contact = ({ restaurant, onReservation, loading = false }) => {
                   rows={4}
                   value={formData.message}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-black transition-all duration-200 font-sans resize-none"
+                  className="w-full px-4 py-3 border border-primary/20 rounded-lg focus:ring-2 focus:ring-gold focus:border-gold transition-all duration-200 font-sans resize-none"
                   placeholder="Demandes spéciales, allergies, occasion particulière..."
                 ></textarea>
               </div>
@@ -267,7 +267,7 @@ const Contact = ({ restaurant, onReservation, loading = false }) => {
                 className={`w-full py-3 px-6 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg ${
                   isSubmitting || loading
                     ? 'bg-gray-400 text-white cursor-not-allowed'
-                    : 'bg-black text-white hover:bg-gray-900'
+                    : 'bg-gold text-black hover:bg-gold-light'
                 }`}
               >
                 {isSubmitting || loading ? 'Envoi en cours...' : 'Confirmer la Réservation'}
