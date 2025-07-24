@@ -135,6 +135,7 @@ const Home = () => {
         <Menu 
           categories={menuCategories}
           wines={wines}
+          beverages={mockData.beverages}
         />
         <Gallery images={mockData.galleryImages} />
         <Contact 
