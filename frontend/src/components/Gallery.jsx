@@ -16,9 +16,25 @@ const Gallery = ({ images }) => {
           </p>
         </div>
 
-        {/* Gallery Grid - Using placeholder images for now */}
+        {/* Gallery Grid - Mix of real photos and placeholders */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-          {images.map((image, index) => (
+          {/* Real Bar Photo */}
+          <div className="group relative bg-primary/10 rounded-lg overflow-hidden aspect-square hover:bg-primary/20 transition-all duration-300 transform hover:scale-105 hover:shadow-xl border border-primary/20">
+            <img
+              src="https://images.unsplash.com/photo-1731156693854-3a9363878240?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODF8MHwxfHNlYXJjaHwxfHxmcmVuY2glMjBiaXN0cm8lMjBkaXNoZXM&ixlib=rb-4.1.0&q=85"
+              alt="Bar Trip'Tik avec tireuses à bière et ambiance authentique"
+              className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <div className="absolute bottom-4 left-4 right-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+              <p className="text-white font-semibold text-sm bg-black/30 backdrop-blur-sm rounded px-3 py-1">
+                Notre Bar - "On vous attend au Bar"
+              </p>
+            </div>
+          </div>
+
+          {/* Placeholder Gallery Items */}
+          {images.slice(1).map((image, index) => (
             <div
               key={image.id}
               className="group relative bg-primary/10 rounded-lg overflow-hidden aspect-square hover:bg-primary/20 transition-all duration-300 transform hover:scale-105 hover:shadow-xl border border-primary/20"
