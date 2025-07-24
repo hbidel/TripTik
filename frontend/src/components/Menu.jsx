@@ -124,35 +124,75 @@ const Menu = ({ categories, wines, beverages }) => {
               </div>
             </div>
           ) : (
-            // Wine Menu
+            // Wine & Beverages Menu
             <div>
               <h3 className="text-3xl font-bold text-primary font-serif mb-8 text-center">
-                Sélection de Vins
+                Vins & Boissons
               </h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {wines.map((wine) => (
-                  <div
-                    key={wine.id}
-                    className="p-6 bg-cream rounded-lg hover:bg-primary-light/10 transition-all duration-300 transform hover:scale-105 text-center border border-primary/10"
-                  >
-                    <div className="flex justify-center mb-4">
-                      <Wine className="w-12 h-12 text-gold" />
+              
+              {/* Wine Section */}
+              <div className="mb-12">
+                <h4 className="text-2xl font-bold text-primary font-serif mb-6 text-center">
+                  Notre Sélection de Vins
+                </h4>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  {wines.map((wine) => (
+                    <div
+                      key={wine.id}
+                      className="p-6 bg-cream rounded-lg hover:bg-primary-light/10 transition-all duration-300 transform hover:scale-105 border border-primary/10 shadow-md"
+                    >
+                      <div className="flex justify-center mb-4">
+                        <Wine className="w-8 h-8 text-gold" />
+                      </div>
+                      <h5 className="text-lg font-semibold text-primary font-serif mb-2 text-center">
+                        {wine.name}
+                      </h5>
+                      <span className="inline-block bg-primary text-white px-3 py-1 rounded-md text-xs font-semibold mb-3 w-full text-center">
+                        {wine.type}
+                      </span>
+                      <p className="text-gray-700 font-sans text-sm leading-relaxed mb-4 text-center">
+                        {wine.description}
+                      </p>
+                      <div className="text-lg font-bold text-gold bg-gold/10 inline-block px-4 py-2 rounded-md w-full text-center">
+                        {wine.price}
+                      </div>
                     </div>
-                    <h4 className="text-xl font-semibold text-primary font-serif mb-2">
-                      {wine.name}
-                    </h4>
-                    <span className="inline-block bg-primary text-white px-3 py-1 rounded-md text-sm font-semibold mb-3">
-                      {wine.type}
-                    </span>
-                    <p className="text-gray-700 font-sans leading-relaxed mb-4">
-                      {wine.description}
-                    </p>
-                    <div className="text-lg font-bold text-gold bg-gold/10 inline-block px-4 py-2 rounded-md">
-                      {wine.price}
-                    </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
+              
+              {/* Beverages Section */}
+              {beverages && (
+                <div>
+                  <h4 className="text-2xl font-bold text-primary font-serif mb-6 text-center">
+                    Boissons & Cocktails
+                  </h4>
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    {beverages.map((category, index) => (
+                      <div
+                        key={index}
+                        className="p-6 bg-cream rounded-lg hover:bg-primary-light/10 transition-all duration-300 border border-primary/10 shadow-md"
+                      >
+                        <h5 className="text-lg font-semibold text-primary font-serif mb-4 text-center">
+                          {category.category}
+                        </h5>
+                        <div className="space-y-3">
+                          {category.items.map((item, itemIndex) => (
+                            <div key={itemIndex} className="flex justify-between items-center">
+                              <span className="text-gray-700 font-sans text-sm">
+                                {item.name}
+                              </span>
+                              <span className="text-gold font-semibold text-sm">
+                                {item.price}
+                              </span>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
             </div>
           )}
         </div>
