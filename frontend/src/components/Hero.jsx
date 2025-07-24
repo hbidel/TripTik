@@ -15,7 +15,7 @@ const Hero = ({ restaurant }) => {
         <div className="text-center">
           {/* Logo Hero */}
           <div className="flex justify-center mb-8">
-            <div className="h-32 w-32 rounded-full bg-white border-4 border-yellow-400 flex flex-col items-center justify-center shadow-xl hover:scale-105 transition-transform duration-300">
+            <div className="h-32 w-32 rounded-full bg-white border-4 border-gold flex flex-col items-center justify-center shadow-xl hover:scale-105 transition-transform duration-300">
               <span className="text-2xl font-bold text-black font-serif">Trip'</span>
               <span className="text-2xl font-bold text-black font-serif">Tik</span>
               <span className="text-xs text-gray-600 font-sans mt-1">RESTAURANT</span>
@@ -23,44 +23,44 @@ const Hero = ({ restaurant }) => {
           </div>
           
           {/* Main Heading */}
-          <h1 className="text-6xl md:text-7xl font-bold text-black font-serif mb-6 leading-tight">
+          <h1 className="text-6xl md:text-7xl font-bold text-white font-serif mb-6 leading-tight">
             {restaurant.name}
           </h1>
           
           {/* Tagline */}
-          <p className="text-xl md:text-2xl text-black/80 font-medium mb-8 font-sans">
+          <p className="text-xl md:text-2xl text-cream font-medium mb-8 font-sans">
             {restaurant.tagline}
           </p>
           
           {/* Description */}
           <div className="max-w-3xl mx-auto mb-12">
-            <p className="text-lg md:text-xl text-black/70 leading-relaxed font-sans">
+            <p className="text-lg md:text-xl text-cream/90 leading-relaxed font-sans">
               {restaurant.description}
             </p>
           </div>
 
           {/* Quick Info Cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 max-w-4xl mx-auto">
-            <div className="bg-primary-dark/50 backdrop-blur-sm rounded-lg p-6 hover:bg-primary-dark/70 transition-all duration-300 transform hover:-translate-y-1">
-              <MapPin className="w-8 h-8 text-black mx-auto mb-4" />
-              <h3 className="font-semibold text-black font-serif text-lg mb-2">Localisation</h3>
-              <p className="text-black/70 font-sans">Saint-Pierre, Reunion Island</p>
+            <div className="bg-primary-light/30 backdrop-blur-sm rounded-lg p-6 hover:bg-primary-light/50 transition-all duration-300 transform hover:-translate-y-1 border border-gold/20">
+              <MapPin className="w-8 h-8 text-gold mx-auto mb-4" />
+              <h3 className="font-semibold text-white font-serif text-lg mb-2">Localisation</h3>
+              <p className="text-cream/80 font-sans">Saint-Pierre, Reunion Island</p>
             </div>
             
-            <div className="bg-primary-dark/50 backdrop-blur-sm rounded-lg p-6 hover:bg-primary-dark/70 transition-all duration-300 transform hover:-translate-y-1">
-              <Clock className="w-8 h-8 text-black mx-auto mb-4" />
-              <h3 className="font-semibold text-black font-serif text-lg mb-2">Horaires</h3>
-              <p className="text-black/70 font-sans text-sm">
+            <div className="bg-primary-light/30 backdrop-blur-sm rounded-lg p-6 hover:bg-primary-light/50 transition-all duration-300 transform hover:-translate-y-1 border border-gold/20">
+              <Clock className="w-8 h-8 text-gold mx-auto mb-4" />
+              <h3 className="font-semibold text-white font-serif text-lg mb-2">Horaires</h3>
+              <p className="text-cream/80 font-sans text-sm">
                 Mar - Ven: {restaurant.hours.weekdays}<br />
                 Sam: {restaurant.hours.saturday}<br />
                 <span className="text-xs">Fermé le {restaurant.hours.closed}</span>
               </p>
             </div>
             
-            <div className="bg-primary-dark/50 backdrop-blur-sm rounded-lg p-6 hover:bg-primary-dark/70 transition-all duration-300 transform hover:-translate-y-1">
-              <Phone className="w-8 h-8 text-black mx-auto mb-4" />
-              <h3 className="font-semibold text-black font-serif text-lg mb-2">Réservation</h3>
-              <p className="text-black/70 font-sans">{restaurant.phone}</p>
+            <div className="bg-primary-light/30 backdrop-blur-sm rounded-lg p-6 hover:bg-primary-light/50 transition-all duration-300 transform hover:-translate-y-1 border border-gold/20">
+              <Phone className="w-8 h-8 text-gold mx-auto mb-4" />
+              <h3 className="font-semibold text-white font-serif text-lg mb-2">Réservation</h3>
+              <p className="text-cream/80 font-sans">{restaurant.phone}</p>
             </div>
           </div>
 
@@ -68,13 +68,13 @@ const Hero = ({ restaurant }) => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button
               onClick={scrollToContact}
-              className="btn-primary bg-black text-white px-8 py-3 rounded-md font-semibold text-lg hover:bg-gray-900 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg"
+              className="btn-primary bg-gold text-black px-8 py-3 rounded-md font-semibold text-lg hover:bg-gold-light transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg"
             >
               Réserver une Table
             </button>
             <button
               onClick={() => document.querySelector('#menu').scrollIntoView({ behavior: 'smooth' })}
-              className="btn-secondary border-2 border-black text-black px-8 py-3 rounded-md font-semibold text-lg hover:bg-black hover:text-white transition-all duration-300 transform hover:-translate-y-1"
+              className="btn-secondary border-2 border-gold text-gold px-8 py-3 rounded-md font-semibold text-lg hover:bg-gold hover:text-black transition-all duration-300 transform hover:-translate-y-1"
             >
               Voir le Menu
             </button>
