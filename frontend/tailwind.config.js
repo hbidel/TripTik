@@ -24,9 +24,10 @@ module.exports = {
   				foreground: 'hsl(var(--popover-foreground))'
   			},
   			primary: {
-  				DEFAULT: '#ECEC75', // Bright lime-yellow
-  				dark: '#e6e67c', // Darker tint for cards
-  				foreground: 'hsl(var(--primary-foreground))'
+  				DEFAULT: '#2c5f5d', // Deep teal from Trip'Tik branding
+  				light: '#3a7370', // Lighter teal
+  				dark: '#1e4a48', // Darker teal
+  				foreground: '#ffffff'
   			},
   			secondary: {
   				DEFAULT: 'hsl(var(--secondary))',
@@ -44,6 +45,12 @@ module.exports = {
   				DEFAULT: 'hsl(var(--destructive))',
   				foreground: 'hsl(var(--destructive-foreground))'
   			},
+  			gold: {
+  				DEFAULT: '#d4af37', // Gold accent from branding
+  				light: '#f4d03f', // Lighter gold
+  				dark: '#b8941f' // Darker gold
+  			},
+  			cream: '#f8f6f0', // Cream color
   			border: 'hsl(var(--border))',
   			input: 'hsl(var(--input))',
   			ring: 'hsl(var(--ring))',
