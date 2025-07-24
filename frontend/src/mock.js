@@ -161,26 +161,155 @@ export const mockData = {
   ],
 
   wines: [
+    // Vins Rouges
     {
       id: 1,
-      name: "Château de Bourbon",
+      name: "Languedoc",
       type: "Rouge",
-      description: "Local red wine from Reunion Island",
-      price: "€32"
+      description: "L'intemporel - AOP Languedoc - 2022",
+      price: "27€"
     },
     {
       id: 2,
-      name: "Sancerre",
-      type: "Blanc",
-      description: "Crisp Loire Valley white wine",
-      price: "€38"
+      name: "Rouge de Garde",
+      type: "Rouge", 
+      description: "AOP Languedoc - Domaine Saint Pierre",
+      price: "32€"
     },
     {
       id: 3,
-      name: "Champagne Brut",
-      type: "Pétillant",
-      description: "House champagne selection",
-      price: "€52"
+      name: "L'Air de Rien",
+      type: "Rouge",
+      description: "AOP Minervois - 2022",
+      price: "30€"
+    },
+    {
+      id: 4,
+      name: "Vallée du Rhône",
+      type: "Rouge",
+      description: "AOP Côtes du Rhône - 2021",
+      price: "30€"
+    },
+    {
+      id: 5,
+      name: "Côtes du Roussillon",
+      type: "Rouge", 
+      description: "AOP Côtes du Roussillon Villages",
+      price: "40€"
+    },
+    
+    // Vins Blancs
+    {
+      id: 6,
+      name: "Sud Ouest",
+      type: "Blanc",
+      description: "Côtes de Gascogne - IGP",
+      price: "26€"
+    },
+    {
+      id: 7,
+      name: "Chablis",
+      type: "Blanc",
+      description: "AOP Chablis - 2022",
+      price: "46€"
+    },
+    {
+      id: 8,
+      name: "Languedoc Blanc",
+      type: "Blanc",
+      description: "AOP Languedoc - Pic Saint Loup",
+      price: "27€"
+    },
+    {
+      id: 9,
+      name: "Vallée du Rhône Blanc",
+      type: "Blanc",
+      description: "AOP Côtes du Rhône",
+      price: "32€"
+    },
+    
+    // Vins Rosés  
+    {
+      id: 10,
+      name: "Côte de Provence",
+      type: "Rosé",
+      description: "AOP Côtes de Provence - 2023",
+      price: "34€"
+    },
+    {
+      id: 11,
+      name: "Rosé de Rêve",
+      type: "Rosé", 
+      description: "IGP Côtes Catalanes - Orange/Greffe",
+      price: "30€"
+    },
+    
+    // Champagnes
+    {
+      id: 12,
+      name: "Yveline Prat",
+      type: "Champagne",
+      description: "Champagne Premier Cru",
+      price: "69€"
+    },
+    {
+      id: 13,
+      name: "Billecart Salmon",
+      type: "Champagne",
+      description: "Brut Réserve - NV",
+      price: "120€"
+    }
+  ],
+
+  beverages: [
+    // Cocktails
+    {
+      category: "Cocktails",
+      items: [
+        { name: "Mojito", price: "8€" },
+        { name: "Caipirinha", price: "8€" },
+        { name: "Kalou", price: "8€" },
+        { name: "Rhum arrangé", price: "7€" },
+        { name: "Whisky Sour", price: "9€" },
+        { name: "Punch Coco", price: "8€" },
+        { name: "Piña Colada", price: "9€" },
+        { name: "Bloody Mary", price: "8€" }
+      ]
+    },
+    
+    // Bières
+    {
+      category: "Bières",
+      items: [
+        { name: "Pression 25cl", price: "3,50€" },
+        { name: "Pression 50cl", price: "5,50€" },
+        { name: "Dodo (33cl)", price: "4,50€" },
+        { name: "Heineken (33cl)", price: "4,50€" },
+        { name: "Desperados (33cl)", price: "5€" }
+      ]
+    },
+    
+    // Whiskys
+    {
+      category: "Whiskys", 
+      items: [
+        { name: "Jameson", price: "6€" },
+        { name: "Jack Daniel's", price: "7€" },
+        { name: "Chivas 12 ans", price: "12€" },
+        { name: "Macallan 12 ans", price: "15€" }
+      ]
+    },
+    
+    // Softs
+    {
+      category: "Softs & Jus",
+      items: [
+        { name: "Jus d'orange frais", price: "4€" },
+        { name: "Limonade maison", price: "4€" },
+        { name: "Thé glacé maison", price: "4€" },
+        { name: "Coca Cola", price: "3,50€" },
+        { name: "Eau plate/gazeuse", price: "3€" }
+      ]
     }
   ],
 
