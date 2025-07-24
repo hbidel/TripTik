@@ -24,9 +24,9 @@ module.exports = {
   				foreground: 'hsl(var(--popover-foreground))'
   			},
   			primary: {
-  				DEFAULT: '#2c5f5d', // Deep teal from Trip'Tik branding
-  				light: '#3a7370', // Lighter teal
-  				dark: '#1e4a48', // Darker teal
+  				DEFAULT: '#2d5a5a', // Deep teal from new palette
+  				light: '#4a7b7a', // Lighter teal
+  				dark: '#1e4040', // Darker teal
   				foreground: '#ffffff'
   			},
   			secondary: {
@@ -38,7 +38,8 @@ module.exports = {
   				foreground: 'hsl(var(--muted-foreground))'
   			},
   			accent: {
-  				DEFAULT: 'hsl(var(--accent))',
+  				DEFAULT: '#d4946f', // Terracotta accent from palette
+  				light: '#e2b08a', // Lighter terracotta
   				foreground: 'hsl(var(--accent-foreground))'
   			},
   			destructive: {
@@ -46,11 +47,11 @@ module.exports = {
   				foreground: 'hsl(var(--destructive-foreground))'
   			},
   			gold: {
-  				DEFAULT: '#d4af37', // Gold accent from branding
-  				light: '#f4d03f', // Lighter gold
-  				dark: '#b8941f' // Darker gold
+  				DEFAULT: '#f4d976', // Golden yellow from new palette
+  				light: '#f7e49a', // Lighter gold
+  				dark: '#e6c55a' // Darker gold
   			},
-  			cream: '#f8f6f0', // Cream color
+  			cream: '#f5f5f0', // Cream from new palette
   			border: 'hsl(var(--border))',
   			input: 'hsl(var(--input))',
   			ring: 'hsl(var(--ring))',
