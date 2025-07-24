@@ -16,9 +16,9 @@ const Gallery = ({ images }) => {
           </p>
         </div>
 
-        {/* Gallery Grid - Mix of real photos and placeholders */}
+        {/* Gallery Grid - Real Trip'Tik photos */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-          {/* Real Bar Photo */}
+          {/* Bar Photo */}
           <div className="group relative bg-primary/10 rounded-lg overflow-hidden aspect-square hover:bg-primary/20 transition-all duration-300 transform hover:scale-105 hover:shadow-xl border border-primary/20">
             <img
               src="https://images.unsplash.com/photo-1651980909099-ddb028d72855?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHwzfHxiZWVyJTIwdGFwc3xlbnwwfHx8fDE3NTMzODM1NTN8MA&ixlib=rb-4.1.0&q=85"
@@ -33,40 +33,50 @@ const Gallery = ({ images }) => {
             </div>
           </div>
 
-          {/* Additional Gallery Images */}
+          {/* Piano Area */}
           <div className="group relative bg-primary/10 rounded-lg overflow-hidden aspect-square hover:bg-primary/20 transition-all duration-300 transform hover:scale-105 hover:shadow-xl border border-primary/20">
             <img
-              src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHwyfHxyZXN0YXVyYW50JTIwYmFyfGVufDB8fHx8MTc1MzM4MzU0Nnww&ixlib=rb-4.1.0&q=85"
-              alt="Ambiance bistro Trip'Tik"
+              src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHwxfHxwaWFubyUyMHJlc3RhdXJhbnR8ZW58MHx8fHwxNzUzMzgzOTcwfDA&ixlib=rb-4.1.0&q=85"
+              alt="Piano Trip'Tik - Un bon café et... à vous de jouer"
               className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             <div className="absolute bottom-4 left-4 right-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
               <p className="text-white font-semibold text-sm bg-primary/80 backdrop-blur-sm rounded px-3 py-1">
-                Ambiance Bistro Authentique
+                "Un bon café et... à vous de jouer"
               </p>
             </div>
           </div>
 
-          {/* Placeholder Gallery Items */}
-          {images.slice(2).map((image, index) => (
-            <div
-              key={image.id}
-              className="group relative bg-primary/10 rounded-lg overflow-hidden aspect-square hover:bg-primary/20 transition-all duration-300 transform hover:scale-105 hover:shadow-xl border border-primary/20"
-            >
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center">
-                  <Camera className="w-12 h-12 text-primary/60 mx-auto mb-3 group-hover:text-primary transition-colors duration-300" />
-                  <p className="text-sm font-semibold text-primary/70 group-hover:text-primary px-4 transition-colors duration-300">
-                    {image.caption}
-                  </p>
-                </div>
-              </div>
-              
-              {/* Hover overlay */}
-              <div className="absolute inset-0 bg-gold/0 group-hover:bg-gold/10 transition-all duration-300"></div>
+          {/* Dining Room with Tables */}
+          <div className="group relative bg-primary/10 rounded-lg overflow-hidden aspect-square hover:bg-primary/20 transition-all duration-300 transform hover:scale-105 hover:shadow-xl border border-primary/20">
+            <img
+              src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHwxfHxyZXN0YXVyYW50JTIwZGluaW5nJTIwcm9vbXxlbnwwfHx8fDE3NTMzODM5NjN8MA&ixlib=rb-4.1.0&q=85"
+              alt="Salle Trip'Tik avec tables dressées et ambiance chaleureuse"
+              className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <div className="absolute bottom-4 left-4 right-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+              <p className="text-white font-semibold text-sm bg-primary/80 backdrop-blur-sm rounded px-3 py-1">
+                Salle principale avec tables dressées
+              </p>
             </div>
-          ))}
+          </div>
+
+          {/* Intimate Dining Setting */}
+          <div className="group relative bg-primary/10 rounded-lg overflow-hidden aspect-square hover:bg-primary/20 transition-all duration-300 transform hover:scale-105 hover:shadow-xl border border-primary/20">
+            <img
+              src="https://images.unsplash.com/photo-1559329007-40df8a9345d8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHwyfHxyZXN0YXVyYW50JTIwZGluaW5nJTIwcm9vbXxlbnwwfHx8fDE3NTMzODM5NjN8MA&ixlib=rb-4.1.0&q=85"
+              alt="Ambiance intimiste Trip'Tik avec éclairage chaleureux"
+              className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <div className="absolute bottom-4 left-4 right-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+              <p className="text-white font-semibold text-sm bg-primary/80 backdrop-blur-sm rounded px-3 py-1">
+                Ambiance intimiste et chaleureuse
+              </p>
+            </div>
+          </div>
         </div>
 
         {/* Ambiance Description */}
