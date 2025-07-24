@@ -75,7 +75,7 @@ const Menu = ({ categories, wines }) => {
             }`}
           >
             <Wine className="w-5 h-5" />
-            <span>Vins</span>
+            <span>Vins & Boissons</span>
           </button>
         </div>
 
