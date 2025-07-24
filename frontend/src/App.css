@@ -17,16 +17,30 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Updated color scheme based on Trip'Tik branding */
+:root {
+  --color-primary: #2c5f5d; /* Deep teal/green from the poster */
+  --color-primary-light: #3a7370; /* Lighter teal */
+  --color-primary-dark: #1e4a48; /* Darker teal */
+  --color-gold: #d4af37; /* Gold accent color */
+  --color-gold-light: #f4d03f; /* Lighter gold */
+  --color-cream: #f8f6f0; /* Cream/off-white */
+  --color-white: #ffffff;
+  --color-black: #1a1a1a;
+  --color-gray-light: #f0f0f0;
+  --color-gray-medium: #666666;
+}
+
 /* Custom button styles following design guidelines */
 .btn-primary {
-  background: #0f172a;
-  color: white;
+  background: var(--color-gold);
+  color: var(--color-black);
   border: none;
   border-radius: 6px;
   padding: 12px 24px;
   font-weight: 600;
   font-size: 16px;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
@@ -35,20 +49,20 @@ html {
 }
 
 .btn-primary:hover {
-  background: #1e293b;
-  transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  background: var(--color-gold-light);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.3);
 }
 
 .btn-secondary {
   background: transparent;
-  color: #0f172a;
-  border: 2px solid #0f172a;
+  color: var(--color-gold);
+  border: 2px solid var(--color-gold);
   border-radius: 6px;
   padding: 10px 22px;
   font-weight: 600;
   font-size: 16px;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
@@ -57,18 +71,30 @@ html {
 }
 
 .btn-secondary:hover {
-  background: #0f172a;
-  color: white;
-  transform: translateY(-1px);
+  background: var(--color-gold);
+  color: var(--color-black);
+  transform: translateY(-2px);
 }
 
 /* Background color classes */
 .bg-primary {
-  background-color: #ECEC75;
+  background-color: var(--color-primary);
+}
+
+.bg-primary-light {
+  background-color: var(--color-primary-light);
 }
 
 .bg-primary-dark {
-  background-color: #e6e67c;
+  background-color: var(--color-primary-dark);
+}
+
+.bg-gold {
+  background-color: var(--color-gold);
+}
+
+.bg-cream {
+  background-color: var(--color-cream);
 }
 
 /* Custom animations and transitions */
@@ -122,7 +148,7 @@ html {
 
 .card-hover:hover {
   transform: translateY(-4px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 25px rgba(44, 95, 93, 0.15);
 }
 
 /* Form focus styles */
@@ -130,8 +156,8 @@ input:focus,
 select:focus,
 textarea:focus {
   outline: none;
-  border-color: #0f172a;
-  box-shadow: 0 0 0 2px rgba(15, 23, 42, 0.1);
+  border-color: var(--color-gold);
+  box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
 }
 
 /* Heading styles with proper hierarchy */
@@ -166,6 +192,15 @@ p, span, div {
 @keyframes pulse {
   0%, 100% { opacity: 1; }
   50% { opacity: 0.5; }
+}
+
+/* Gold text helper */
+.text-gold {
+  color: var(--color-gold);
+}
+
+.text-cream {
+  color: var(--color-cream);
 }
 
 /* Mobile responsive adjustments */
