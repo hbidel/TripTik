@@ -17,14 +17,16 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Updated color scheme based on Trip'Tik branding */
+/* Updated color scheme based on new Trip'Tik palette */
 :root {
-  --color-primary: #2c5f5d; /* Deep teal/green from the poster */
-  --color-primary-light: #3a7370; /* Lighter teal */
-  --color-primary-dark: #1e4a48; /* Darker teal */
-  --color-gold: #d4af37; /* Gold accent color */
-  --color-gold-light: #f4d03f; /* Lighter gold */
-  --color-cream: #f8f6f0; /* Cream/off-white */
+  --color-primary: #2d5a5a; /* Deep teal/green from the palette */
+  --color-primary-light: #4a7b7a; /* Lighter teal */
+  --color-primary-dark: #1e4040; /* Darker teal */
+  --color-gold: #f4d976; /* Golden yellow from palette */
+  --color-gold-light: #f7e49a; /* Lighter gold */
+  --color-accent: #d4946f; /* Terracotta/orange accent from palette */
+  --color-accent-light: #e2b08a; /* Lighter terracotta */
+  --color-cream: #f5f5f0; /* Cream/off-white from palette */
   --color-white: #ffffff;
   --color-black: #1a1a1a;
   --color-gray-light: #f0f0f0;
