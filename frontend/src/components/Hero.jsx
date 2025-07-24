@@ -74,7 +74,7 @@ const Hero = ({ restaurant }) => {
             </button>
             <button
               onClick={() => document.querySelector('#menu').scrollIntoView({ behavior: 'smooth' })}
-              className="btn-secondary border-2 border-gold text-gold px-8 py-3 rounded-md font-semibold text-lg hover:bg-gold hover:text-black transition-all duration-300 transform hover:-translate-y-1"
+              className="btn-secondary border-2 border-accent text-accent px-8 py-3 rounded-md font-semibold text-lg hover:bg-accent hover:text-white transition-all duration-300 transform hover:-translate-y-1"
             >
               Voir le Menu
             </button>
