@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Wine, Utensils, Coffee } from 'lucide-react';
 
-const Menu = ({ categories, wines }) => {
+const Menu = ({ categories, wines, beverages }) => {
   const [activeCategory, setActiveCategory] = useState(0);
   const [showWines, setShowWines] = useState(false);
 
